@@ -2,9 +2,9 @@
 
 A flutter application which contain links of all the classes.
 
-![image](https://github.com/aviraltandon21/class_link/blob/master/screenshots/one.jpg?raw=true)
-![image](https://github.com/aviraltandon21/class_link/blob/master/screenshots/two.jpg?raw=true)
-![image](https://github.com/aviraltandon21/class_link/blob/master/screenshots/three.jpg?raw=true)
+![image](https://github.com/aviraltandon21/class_link/blob/master/screenshots/one.jpeg?raw=true)
+![image](https://github.com/aviraltandon21/class_link/blob/master/screenshots/two.jpeg?raw=true)
+![image](https://github.com/aviraltandon21/class_link/blob/master/screenshots/three.jpeg?raw=true)
 
 ## Getting Started
 
