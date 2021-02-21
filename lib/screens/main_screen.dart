@@ -1,8 +1,9 @@
 //import 'package:class_link/screens/wednesday.dart';
 
 import 'package:class_link/screens/links.dart';
+import 'package:class_link/screens/section.dart';
 //import 'package:class_link/screens/monday_it.dart';
-import 'package:class_link/screens/welcome_screen.dart';
+//import 'package:class_link/screens/welcome_screen.dart';
 import 'package:class_link/screens/welcome_screen_it.dart';
 import 'package:flutter/material.dart';
 import 'package:class_link/components/rounded_button.dart';
@@ -48,7 +49,7 @@ class _MainScreenState extends State<MainScreen>{
               title: 'CSE',
               colour: Colors.redAccent[700],
               onPressed: () {
-                Navigator.pushNamed(context, WelcomeScreen.id);
+                Navigator.pushNamed(context, Section.id);
               },
             ),
             SizedBox(

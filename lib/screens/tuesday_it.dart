@@ -85,40 +85,6 @@ class _TuesdayITState extends State<TuesdayIT> {
               //child: const Center(child: Text('Entry A')),
             ),
           ),
-          SizedBox(
-            height: 30.0,
-          ),
-          InkWell(
-            onTap: () async {
-              if(await canLaunch("https://meet.google.com/gmr-iikq-wvf")) {
-                await launch("https://meet.google.com/gmr-iikq-wvf");
-              }
-            },
-            child: Container(
-              height: 150,
-              //color: Colors.amber[600],
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(30.0),
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      //Colors.blue[800],
-                      Color.fromARGB(255, 142, 158, 171),
-                      Color.fromARGB(255, 238, 242,243),
-                    ]
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Text(
-                  'CS206: OPERATING SYSTEMS\nNovarun Sir \n\nTime: 11:15-12:10',
-                  //textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0),),
-
-              ),
-              //child: const Center(child: Text('Entry A')),
-            ),
-          ),
 
           SizedBox(
             height: 30.0,

@@ -84,6 +84,42 @@ class _ThursdayITState extends State<ThursdayIT> {
             ),
           ),
 
+          SizedBox(
+            height: 30.0,
+          ),
+          InkWell(
+            onTap: () async {
+              if(await canLaunch("https://meet.google.com/mye-dqek-wdg")) {
+                await launch("https://meet.google.com/mye-dqek-wdg");
+              }
+            },
+            child: Container(
+              height: 150,
+              //color: Colors.amber[600],
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(30.0),
+                gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      //Colors.blue[800],
+                      Color.fromARGB(255, 253, 200, 48),
+                      Color.fromARGB(255, 243, 115,53),
+                    ]
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Text(
+                  'CS206: OPERATING SYSTEM\nJaishree Mam \n\nTime: 10:15-11:10',
+                  //textAlign: TextAlign.start,
+                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0),),
+
+              ),
+              //child: const Center(child: Text('Entry A')),
+            ),
+          ),
+
+
 
           SizedBox(
             height: 30.0,

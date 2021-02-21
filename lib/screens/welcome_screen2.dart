@@ -1,24 +1,19 @@
-//import 'dart:html';
-import 'package:class_link/screens/friday.dart';
-import 'package:class_link/screens/monday.dart';
+import 'package:class_link/screens/friday2.dart';
+import 'package:class_link/screens/monday2.dart';
 import 'package:class_link/screens/noclass.dart';
-import 'package:class_link/screens/thursday.dart';
-import 'package:class_link/screens/tuesday.dart';
-import 'package:class_link/screens/wednesday.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:class_link/screens/thursday2.dart';
+import 'package:class_link/screens/tuesday2.dart';
+import 'package:class_link/screens/wednesday2.dart';
 import 'package:flutter/material.dart';
-import 'package:class_link/components/rounded_button.dart';
 import 'package:intl/intl.dart';
-
-class WelcomeScreen extends StatefulWidget {
-  static const String id = 'welcome_screen';
+import 'package:class_link/components/rounded_button.dart';
+class WelcomeScreen2 extends StatefulWidget {
+  static const String id = 'welcome_screen2';
   @override
-  _WelcomeScreenState createState() => _WelcomeScreenState();
+  _WelcomeScreen2State createState() => _WelcomeScreen2State();
 }
 
-class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProviderStateMixin {
-
-
+class _WelcomeScreen2State extends State<WelcomeScreen2> with SingleTickerProviderStateMixin {
   String dateFormat = new DateFormat.EEEE().format(new DateTime.now());
 
   AnimationController controller;
@@ -28,7 +23,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
     // TODO: implement initState
     super.initState();
     controller = AnimationController(duration: Duration(seconds: 1),
-    vsync: this,
+      vsync: this,
     );
     animation = ColorTween(begin: Colors.blueGrey,end:Colors.white).animate(controller);
     controller.forward();
@@ -42,8 +37,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
-        title: Text("CSE : 2A+2B"),
+        title: Text("CSE : 2C+2D"),
         elevation: 0.0,
       ),
       backgroundColor: animation.value,
@@ -58,14 +54,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
               title: 'Monday',
               colour: Colors.lightBlueAccent,
               onPressed: () {
-               Navigator.pushNamed(context, Monday.id);
+                Navigator.pushNamed(context, Monday2.id);
               },
             ),
             RoundedButton(
               title: 'Tuesday',
               colour: Colors.deepOrange,
               onPressed: () {
-                Navigator.pushNamed(context, Tuesday.id);
+                Navigator.pushNamed(context, Tuesday2.id);
               },
             ),
             RoundedButton(
@@ -73,21 +69,21 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
               colour: Colors.indigo,
               onPressed: () {
 
-                Navigator.pushNamed(context, Wednesday.id);
+                Navigator.pushNamed(context, Wednesday2.id);
               },
             ),
             RoundedButton(
               title: 'Thursday',
               colour: Colors.red[300],
               onPressed: () {
-                 Navigator.pushNamed(context, Thursday.id);
+                Navigator.pushNamed(context, Thursday2.id);
               },
             ),
             RoundedButton(
               title: 'Friday',
               colour: Colors.purple[300],
               onPressed: () {
-                Navigator.pushNamed(context, Friday.id);
+                Navigator.pushNamed(context, Friday2.id);
               },
             ),
             RoundedButton(
@@ -96,19 +92,19 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
               onPressed: () {
                 switch(dateFormat){
                   case "Monday":
-                    Navigator.pushNamed(context, Monday.id);
+                    Navigator.pushNamed(context, Monday2.id);
                     break;
                   case "Tuesday":
-                    Navigator.pushNamed(context, Tuesday.id);
+                    Navigator.pushNamed(context, Tuesday2.id);
                     break;
                   case "Wednesday":
-                    Navigator.pushNamed(context, Wednesday.id);
+                    Navigator.pushNamed(context, Wednesday2.id);
                     break;
                   case "Thursday":
-                    Navigator.pushNamed(context, Thursday.id);
+                    Navigator.pushNamed(context, Thursday2.id);
                     break;
                   case "Friday":
-                    Navigator.pushNamed(context, Friday.id);
+                    Navigator.pushNamed(context, Friday2.id);
                     break;
                   default:
                     Navigator.pushNamed(context, NoClass.id);
@@ -119,6 +115,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
           ],
         ),
       ),
+
     );
   }
 }

@@ -19,8 +19,8 @@ class _MondayITState extends State<MondayIT> {
         children: <Widget>[
           InkWell(
             onTap: () async {
-              if(await canLaunch("https://meet.google.com/gmr-iikq-wvf")) {
-                await launch("https://meet.google.com/gmr-iikq-wvf");
+              if(await canLaunch("https://meet.google.com/mye-dqek-wdg")) {
+                await launch("https://meet.google.com/mye-dqek-wdg");
               }
             },
             child: Container(
@@ -40,7 +40,7 @@ class _MondayITState extends State<MondayIT> {
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  'CS206: OPERATING SYSTEMS\nNovarun Sir\n\nTime: 8:00-8:55',
+                  'CS206: OPERATING SYSTEMS\nJaishree Mam\n\nTime: 8:00-8:55',
                   //textAlign: TextAlign.start,
                   style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0),),
 

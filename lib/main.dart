@@ -1,5 +1,12 @@
 import 'dart:async';
+import 'package:class_link/screens/friday2.dart';
 import 'package:class_link/screens/links.dart';
+import 'package:class_link/screens/monday2.dart';
+import 'package:class_link/screens/section.dart';
+import 'package:class_link/screens/thursday2.dart';
+import 'package:class_link/screens/tuesday2.dart';
+import 'package:class_link/screens/wednesday2.dart';
+import 'package:class_link/screens/welcome_screen2.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:class_link/screens/friday.dart';
 import 'package:class_link/screens/friday_it.dart';
@@ -44,6 +51,13 @@ class MyApp extends StatelessWidget {
       MainScreen.id: (context) => MainScreen(),
       WelcomeScreenIT.id: (context) => WelcomeScreenIT(),
           Links.id: (context) => Links(),
+          Section.id: (context) => Section(),
+          WelcomeScreen2.id: (context) => WelcomeScreen2(),
+          Monday2.id: (context) => Monday2(),
+          Tuesday2.id: (context) => Tuesday2(),
+          Wednesday2.id: (context) => Wednesday2(),
+          Thursday2.id: (context) => Thursday2(),
+          Friday2.id: (context) => Friday2()
 
     },
     );

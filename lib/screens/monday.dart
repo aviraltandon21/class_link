@@ -11,7 +11,7 @@ class _MondayState extends State<Monday> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Monday(CSE)"),
+        title: Text("Monday(CSE : 2A+2B)"),
         elevation: 0.0,
       ),
       body: ListView(
@@ -19,8 +19,8 @@ class _MondayState extends State<Monday> {
         children: <Widget>[
           InkWell(
             onTap: () async {
-              if(await canLaunch("https://meet.google.com/gmr-iikq-wvf")) {
-                await launch("https://meet.google.com/gmr-iikq-wvf");
+              if(await canLaunch("https://meet.google.com/ofs-wezh-che")) {
+                await launch("https://meet.google.com/ofs-wezh-che");
               }
             },
             child: Container(
@@ -40,55 +40,22 @@ class _MondayState extends State<Monday> {
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  'CS206: OPERATING SYSTEMS\nNovarun Sir \nSection : 2A+2B\nSection: 2C+2D \nTime: 8:00-8:55',
+                  'CS204: DBMS\nAntriksh Sir\n\nTime: 8:00-8:55',
                   //textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.0),),
+                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0),),
 
               ),
               //child: const Center(child: Text('Entry A')),
             ),
           ),
-          SizedBox(
-            height: 30.0,
-          ),
-          InkWell(
-            onTap: () async {
-              if(await canLaunch("https://meet.google.com/ofs-wezh-che")) {
-                await launch("https://meet.google.com/ofs-wezh-che");
-              }
-            },
-            child: Container(
-              height: 150,
-              //color: Colors.amber[500],
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(30.0),
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      //Colors.blue[800],
-                      Color.fromARGB(255, 142, 158, 171),
-                      Color.fromARGB(255, 238, 242,243),
-                    ]
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Text(
-                  'CS204: DATABASE SYSTEMS\nAntriksh Sir \n\nSection : 2A+2B\nTime: 9:00-9:55',
-                  //textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.0),),
 
-              ),
-              //child: const Center(child: Text('Entry B')),
-            ),
-          ),
           SizedBox(
             height: 30.0,
           ),
           InkWell(
             onTap: () async {
-              if(await canLaunch("https://meet.google.com/ofs-wezh-che")) {
-                await launch("https://meet.google.com/ofs-wezh-che");
+              if(await canLaunch("https://meet.google.com/mye-dqek-wdg")) {
+                await launch("https://meet.google.com/mye-dqek-wdg");
               }
             },
             child: Container(
@@ -108,9 +75,9 @@ class _MondayState extends State<Monday> {
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  'CS204: DATABASE SYSTEMS\nAntriksh Sir \n\nSection : 2C+2D\nTime: 10:15-11:10',
+                  'CS206: OPERATING SYSTEMS\nJaishree Mam\n\nTime: 10:15-11:10',
                   //textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.0),),
+                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0),),
 
               ),
               //child: const Center(child: Text('Entry C')),
@@ -142,48 +109,15 @@ class _MondayState extends State<Monday> {
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  'CS208: COMPUTER ORG.\nKKJ Sir \n\nSection : 2A+2B\nTime: 11:15-12:10',
+                  'CS208: COMPUTER ORG.\nKKJ Sir \n\nTime: 11:15-12:10',
                   //textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.0),),
+                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0),),
 
               ),
               //child: const Center(child: Text('Entry A')),
             ),
           ),
-          SizedBox(
-            height: 30.0,
-          ),
-          InkWell(
-            onTap: () async {
-              if(await canLaunch("https://meet.google.com/zxr-fzph-juj")) {
-                await launch("https://meet.google.com/zxr-fzph-juj");
-              }
-            },
-            child: Container(
-              height: 150,
-              //color: Colors.amber[600],
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(30.0),
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      //Colors.blue[800],
-                      Color.fromARGB(255, 134, 168, 231),
-                      Color.fromARGB(255, 145, 234,228),
-                    ]
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Text(
-                  'HS202: ECONOMICS\nVikas Sir \n\nSection : 2C+2D\nTime: 11:15-12:10',
-                  //textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.0),),
 
-              ),
-              //child: const Center(child: Text('Entry A')),
-            ),
-          ),
           SizedBox(
             height: 30.0,
           ),
@@ -210,43 +144,9 @@ class _MondayState extends State<Monday> {
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  'CS262: DATABASE LAB\nAntriksh Sir \n\nSection : 2A+2B\nTime: 02:00-05:00',
+                  'CS262: DATABASE LAB\nAntriksh Sir \n\nTime: 02:00-05:00',
                   //textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.0),),
-
-              ),
-              //child: const Center(child: Text('Entry A')),
-            ),
-          ),
-          SizedBox(
-            height: 30.0,
-          ),
-          InkWell(
-            onTap: () async {
-              if(await canLaunch("http://meet.google.com/wmw-fkpk-kjc")) {
-                await launch("http://meet.google.com/wmw-fkpk-kjc");
-              }
-            },
-            child: Container(
-              height: 150,
-              //color: Colors.amber[600],
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(30.0),
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      //Colors.blue[800],
-                      Color.fromARGB(255, 238, 156, 167),
-                      Color.fromARGB(255, 255, 221,225),
-                    ]
-                ),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Text(
-                  'CS266: OS LAB\nNovarun Sir \n\nSection : 2C+2D\nTime: 02:00-05:00',
-                  //textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22.0),),
+                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24.0),),
 
               ),
               //child: const Center(child: Text('Entry A')),
